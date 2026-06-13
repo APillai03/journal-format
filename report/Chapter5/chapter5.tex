@@ -1,0 +1,45 @@
+% ================================================================
+% Chapter 5: Conclusion and Future Scope
+% Included via \input{chapter5_conclusion} in main.tex
+% ================================================================
+
+\chapter{Conclusion and Future Scope}
+\label{chap:conclusion}
+
+% ------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+% ------------------------------------------------------------------
+
+This work presented a OPTiML-inspired self-supervised pretraining pipeline for multi-label chest X-ray classification on the NIH ChestX-ray14 dataset. The SSL stage used a dense EfficientNet-B3 backbone trained with a composite loss combining optimal transport alignment, variance and covariance regularisation.
+
+The pretrained backbone was then fine-tuned in a multimodal setup, fusing image features with patient metadata. The model achieved a mean AUC-ROC of \textbf{0.8636}, outperforming supervised-only baselines including DenseNet-121 (0.77), ViT/Swin (0.80) and EfficientNet-B3 without SSL (0.85). Strong per-class performance was seen for Emphysema (0.9714), Edema (0.9632) and Fibrosis (0.9403), while diffuse findings like Infiltration (0.7011) and Nodule (0.7538) remained more challenging due to visual ambiguity and label noise.
+
+Threshold optimisation was an important post-processing step, improving Macro F1 from 0.3444 to \textbf{0.5103} by lowering the per-class decision boundary to a mean of 0.393. Classes like Fibrosis and Pneumonia which were completely suppressed at the default threshold of 0.5 became detectable after calibration. Auxiliary tasks further validated the spatial quality of the representations, with lung segmentation achieving Dice of \textbf{0.9589} and localisation reaching a mean IoU of 0.2110 under the limited NIH bounding box annotations, with Cardiomegaly localised at near-clinical quality (IoU = 0.6607, IoU@0.50 = 82.8\%).
+
+The label efficiency analysis showed that SL+SSL trained on 50\% of labelled data matches full-data supervised performance, which is the most practically significant result of this work. However, at 50\% and below, the SSL-pretrained model degrades sharply, suggesting that the patch-level optimal transport objective over-specifies the representation for structural alignment at the cost of fine-grained class discriminability when labels are very scarce. Overall, OPTiML-inspired SSL pretraining shows clear promise for medical image analysis, but stabilising its performance in the low-label regime remains an open challenge that motivates the directions outlined below.
+
+% ------------------------------------------------------------------
+\section{Future Scope}
+\label{sec:future}
+% ------------------------------------------------------------------
+
+\subsection{Stabilising SSL in the Low-Label Regime}
+
+The most immediate open problem is the degradation of SL+SSL relative to SL at label fractions below 50\%. Future work should investigate modifications to the SSL objective that bring the pretraining task distribution closer to the downstream classification task, for example by incorporating pseudo-label consistency regularisation during fine-tuning, or by extending the pretraining schedule so that the optimal transport alignment has more epochs to produce representations that generalise to class boundaries rather than only structural anatomy. Curriculum-based fine-tuning, where the model is first trained on high-confidence easy samples and gradually exposed to rare classes, may also help bridge the gap.
+
+\subsection{Localisation with VinBigData Annotations}
+
+The current localisation module is constrained by the small NIH BBox annotation set (880 samples). Fine-tuning the bounding box regressor on the VinBigData chest X-ray dataset, which provides large-scale radiologist-annotated boxes across 14 pathology categories, is expected to raise mean IoU from the current 0.2110 to approximately 0.45--0.55. This is a straightforward extension that would make the localisation component clinically useful without any architectural changes.
+
+\subsection{Expanding Pretraining to Larger Corpora}
+
+The SSL backbone was pretrained exclusively on NIH ChestX-ray14. Expanding pretraining to include CheXpert, MIMIC-CXR, or PadChest would expose the backbone to substantially more diverse radiographic conditions, patient demographics, and acquisition protocols at no annotation cost. A larger and more diverse pretraining corpus is likely to improve generalisation particularly for rare pathologies and edge-case presentations, and could also close the performance gap observed at low label fractions.
+
+\subsection{Stronger Backbones and SSL Objectives}
+
+Applying the OPTiML objective to a Swin Transformer backbone is a natural architectural extension, given that its hierarchical attention mechanism may align more naturally with the patch-level optimal transport used in the SSL stage. On the objective side, replacing the Sinkhorn OT alignment with a masked image modelling objective such as MAE or BEiT, or combining both, could produce representations that are simultaneously spatially consistent and semantically discriminative, addressing the tension observed between structural pretraining and class-level fine-tuning at low data.
+
+\subsection{Free-Form Report Generation}
+
+The current report generation stage is template-driven and does not produce free-form clinical prose. Integrating a vision-language model fine-tuned on MIMIC-CXR radiology reports as a report drafting head would allow the pipeline to generate radiologist-style findings and impressions conditioned on the detected diseases, their zones, and the segmentation outputs. Replacing the horizontal zone division with lobe-aware segmentation would further improve the anatomical precision of zone-to-disease attribution in the generated reports.

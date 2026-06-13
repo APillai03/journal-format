@@ -1,0 +1,141 @@
+\chapter{Literature Survey}
+\graphicspath{{Chapter2/}}
+The recent developments in using deep learning models to automatically generate radiology reports for chest X-rays are the main topic of this review of the literature. It places special emphasis on clinical evaluation, explainability strategies, and multimodal models. From basic image captioning, the field has developed into complex models that integrate clinical reasoning, knowledge representation, and image understanding. Anatomical attention mechanisms, retrieval-augmented generation, vision-language alignment, and explainability concept bottleneck models are some of the important topics that have been investigated. The goal of this review is to identify research gaps that require attention, such as correcting hallucinations, quantitatively validating explainability, and adding structured clinical context, as well as to highlight the SOTA work currently in use and evaluate their strengths and weaknesses.
+\section{Multimodal Learning Architectures}
+This technique tries to jointly model visual and textual findings for automated chest x-ray report generation, this is not just simple image captioning, these architectures try to capture by linking image features with medical terminologies.
+\subsection{Knowledge-Enhanced Report Generation}
+This approached was put forward by Yang et al. and it introduces a medical knowledge base that is learned during training. Instead of relying on predefined medical knowledge and knowledge graphs the model learns semantic relationships between anatomical structures and clinical phrases.
+The system aligns three modalities into a shared embedding space:
+\begin{enumerate}
+    \item Image features extracted from chest X-rays
+    \item Textual representations of reports
+    \item Disease label embeddings
+\end{enumerate}
+By enforcing alignment across these representations, the model learns how specific visual patterns correspond to specific medical concepts and language.
+\subsubsection{Strengths}
+Some of the strengths include
+\begin{enumerate}
+    \item Performance improvement in BLEU and ROUGE metrics in IU-XRAY and MIMIC-CXR datasets.
+    \item Another major strength is reduction of manual engineering since this system avoids using manually created labels.
+\end{enumerate}
+\subsubsection{Weaknesses}
+Some of the weaknesses are:
+\begin{enumerate}
+    \item There is a performance gain, that cannot be denied but the idea of a learned knowledge base lacks interpretability. Experts cannot directly tell what knowledge has been encoded.
+    \item It does not provide region-level grounding nor pixel level.
+\end{enumerate}
+
+\subsection{Integration of Structured Clinical Context}
+This goes beyond the previous knowledge base method as this extends and incorporates clinical information like:
+\begin{enumerate}
+    \item Vital Signs
+    \item Symptoms
+    \item Clinical Notes
+    \item Patient History
+\end{enumerate}
+and it uses a cross headed multi attention mechanism to learn weights from different modalities while generating the report.
+\subsubsection{Strengths}
+Since we know that ML and DL are about mimicking human intelligence, this method come very close to it as radiologists rarely interpret X-rays in isolation. E.g. A patient comes with cough and cold then it obviously increases chance of lung infection.
+\subsubsection{Weaknesses}
+\begin{enumerate}
+    \item A major problem that is not directly visible is confirmation bias, the model may overly rely on symptoms than actual structural/anatomical findings.
+    \item Another key challenge is handling missing or inconsistent data so a model overly relying on structured data will become biased on absence of them.
+\end{enumerate}
+\subsection{Multi-Granularity Feature Fusion}
+This method was proposed by Zhang et al. and relies on multi scale image feature extraction using Swin Transformers. These features will contain both global and local features.
+This architecture uses:
+\begin{enumerate}
+    \item Multi Scale image features.
+    \item Label Embeddings
+    \item Patient History encoded with BioBERT
+    \item A language decoder (DistilGPT2)
+\end{enumerate}
+\subsubsection{Strengths}
+\begin{enumerate}
+    \item Chest/Lung abnormalities occur at multiple scales. Large Pleural Effusions require global understanding whereas small masses and nodules require understanding at local level.
+    \item This system proved better detector of subtle findings 
+\end{enumerate}
+\section{Modular and Component-Based Systems}
+Unlike end to end modules, modular system decomposes report generation into interpretable stages.
+\subsection{Clinical Pipeline Integration (IHRAS Framework)}
+IHRAS or the Intelligent Humanized Radiology Analysis System by IHRAS Research Team implements such a pipeline which includes:
+\begin{enumerate}
+    \item Multi-label Disease Classification.
+    \item Grad-CAM visualization.
+    \item Anatomical segmentation.
+    \item Structured language generation.
+    
+\end{enumerate}
+\subsubsection{Strengths}
+This modular design improves efficiency and is transparent. Each stage can be validated independently. Segmentation outputs provide anatomical grounding. Grad-CAM visualizations allow experts or radiologists to verify if the right regions were considered or not.
+\subsubsection{Weaknesses}
+Major drawback is cascading of bad results or errors across various stages as modules operated separately and error cannot propagate so final report quality may deteriorate.
+
+\section{Retrieval-Augmented and Hybrid Approaches}
+\subsection{Multimodal Retrieval-Based Generation}
+This approach was given by Jeong et al. and as the name suggests relies on a large knowledge base (pre-training) to fetch historically similar cases for report generation.
+\subsubsection{Strengths}
+Retrieval anchors generation to real clinical examples, reducing hallucination. It improves factual consistency, especially for rare conditions.
+\subsubsection{Limitations}
+Performance depends heavily on retrieval accuracy. Novel cases that differ from historical data may be poorly handled.
+It requires large curated datasets.
+\subsection{Concept Bottleneck Models with RAG}
+Approach by Chen and Wang integrate concept bottlenecks with multi-agent Retrieval-Augmented Generation.
+The system first predicts explicit medical concepts (e.g., cardiomegaly, effusion). These interpretable concepts form a bottleneck. A retrieval system then gathers supporting evidence, and a coordinating agent generates the final report.
+\subsubsection{Strengths}
+\begin{enumerate}
+    \item Concept vectors are human-interpretable. Experts can correct incorrect concepts before final generation.
+    \item Hallucination is reduced because generation is guided by explicit concept detection and retrieved evidence.
+    \item The architecture supports human-in-the-loop validation.
+
+\end{enumerate}
+\subsubsection{Weaknesses}
+It increases system complexity and computational overhead. Concept prediction errors can still affect downstream retrieval and generation.
+\section{Comparative Insight}
+\begin{table}[h]
+\centering
+\caption{Comparitive Study of Literature Survey}
+\label{tab:method_comparison}
+\begin{tabular}{|p{4cm}|p{5.5cm}|p{5.5cm}|}
+\hline
+\textbf{Method} & \textbf{Strengths} & \textbf{Weaknesses} \\
+\hline
+
+Knowledge-Enhanced Report Generation 
+& Performance improvement in BLEU and ROUGE metrics on IU-XRAY and MIMIC-CXR datasets. Reduces manual engineering since it avoids using manually created labels and predefined knowledge graphs. 
+& Learned knowledge base lacks interpretability; experts cannot directly tell what knowledge has been encoded. Does not provide region-level grounding or pixel-level explanation. \\
+
+\hline
+
+Integration of Structured Clinical Context 
+& Mimics human reasoning since radiologists rarely interpret X-rays in isolation. Incorporates vital signs, symptoms, clinical notes, and patient history to improve contextual decision-making. 
+& Risk of confirmation bias where the model may overly rely on symptoms rather than structural/anatomical findings. Handling missing or inconsistent structured data is challenging and may introduce bias. \\
+
+\hline
+
+Multi-Granularity Feature Fusion 
+& Captures abnormalities occurring at multiple scales. Global understanding helps detect large pleural effusions, while local features help detect small masses and nodules. Demonstrated better detection of subtle findings. 
+& Increased architectural complexity due to multi-scale fusion and multiple components. May reduce interpretability because multiple feature levels are fused together. \\
+
+\hline
+
+Clinical Pipeline Integration (IHRAS Framework) 
+& Modular design improves transparency and efficiency. Each stage (classification, Grad-CAM visualization, segmentation, structured generation) can be independently validated. Segmentation provides anatomical grounding and Grad-CAM enables expert verification of attended regions. 
+& Cascading of errors across stages. Since modules operate separately, errors in early stages may deteriorate final report quality. \\
+
+\hline
+
+Multimodal Retrieval-Based Generation 
+& Retrieval anchors generation to real clinical examples, reducing hallucination. Improves factual consistency, especially for rare conditions. 
+& Highly dependent on retrieval accuracy. Novel cases different from historical data may be poorly handled. Requires large curated datasets. \\
+
+\hline
+
+Concept Bottleneck Models with RAG 
+& Concept vectors are human-interpretable and allow expert correction before final generation. Reduces hallucination by guiding generation with explicit concept detection and retrieved evidence. Supports human-in-the-loop validation. 
+& Increases system complexity and computational overhead. Concept prediction errors can affect downstream retrieval and generation. \\
+
+\hline
+
+\end{tabular}
+\end{table}

@@ -1,0 +1,18 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Example chest X-ray samples (top) and corresponding patient metadata (bottom).}}{2}{figure.caption.8}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Edge-Aware U-Net for lung segmentation with dual mask and edge output heads.}}{20}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Four-panel visualisation of the complete inference pipeline on a sample NIH chest radiograph.}}{28}{figure.caption.33}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overall system architecture.}}{29}{figure.caption.34}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Learning curves for the supervised multi-label classification model.}}{31}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces ROC curves per pathology on the validation set. The dashed diagonal represents random classifier performance (AUC = 0.5).}}{33}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Threshold optimisation results: (top-left) optimal thresholds per class, (top-right) F1 scores with optimised thresholds, (bottom-left) threshold vs.\ F1 scatter, (bottom-right) distribution of optimal thresholds.}}{37}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces t-SNE projection of validation embeddings coloured by individual disease label versus Normal. Each subplot corresponds to one disease class, showing the degree of separation between positive cases (coloured) and Normal cases (gray).}}{38}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces t-SNE projection coloured by any disease present versus Normal. Positive cases (any pathology) are shown in one colour; Normal cases in another.}}{39}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Bounding box regression training curves: (left) CIoU + SmoothL1 combined loss, (centre) mean IoU, (right) validation IoU hit-rate at 0.25 and 0.50 thresholds.}}{41}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Qualitative bounding box predictions on the validation set. Green boxes denote ground-truth annotations; red boxes denote model predictions. Per-sample IoU scores are shown in the subplot titles.}}{42}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Segmentation training curves: combined loss curve (train and validation) and validation metrics (Dice, IoU, Boundary F1) over 60 epochs.}}{43}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Qualitative segmentation output: predicted binary lung mask overlaid on the input radiograph with bounding boxes drawn around the segmented left and right lung fields.}}{43}{figure.caption.56}%
+\addvspace {10\p@ }

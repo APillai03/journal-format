@@ -1,0 +1,20 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Comparitive Study of Literature Survey}}{11}{table.caption.20}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces High-level architecture of the MultiModal EfficientNet-B3 model.}}{16}{table.caption.22}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Detailed layer-by-layer summary of the MultiModal EfficientNet-B3 backbone (abridged by stage).}}{16}{table.3.2}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Architecture summary of the MultiModal BBox Regressor.}}{19}{table.caption.23}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Anatomical zone nomenclature derived from segmented lung bounding boxes.}}{27}{table.caption.32}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces OPTiML-inspired SSL pretraining loss per epoch.}}{30}{table.caption.35}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Per-class AUC-ROC scores on the validation set (best model checkpoint).}}{32}{table.caption.37}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Mean AUC-ROC at varying labelled data fractions for SL-only and SL+SSL models.}}{33}{table.caption.39}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Overall F1 improvement from per-class threshold optimisation.}}{35}{table.caption.44}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Per-class threshold optimisation results.}}{36}{table.caption.45}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Comparison of mean AUC-ROC across baseline architectures and the proposed model.}}{39}{table.caption.49}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces Bounding box regression training summary at early stopping (epoch 34).}}{40}{table.caption.50}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Per-class IoU on the bounding box validation set.}}{41}{table.caption.52}%
+\contentsline {table}{\numberline {4.9}{\ignorespaces Lung segmentation performance at epoch 60 on the validation set.}}{43}{table.caption.54}%
+\contentsline {table}{\numberline {4.10}{\ignorespaces Summary of results across all tasks.}}{44}{table.caption.57}%
+\addvspace {10\p@ }

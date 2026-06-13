@@ -1,0 +1,262 @@
+%\documentclass[BTech]{iiitdmdiss}
+%\documentclass[DD]{iiitdmdiss}
+\documentclass[BTech]{iiitdmdiss}
+\usepackage{times}
+\usepackage{tikz}
+\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{placeins}
+\usepackage{pgfplots}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt} % make headheight big enough for fancyhdr
+\usepackage[driverfallback=dvipdfm]{hyperref} % hyperlinks for references.
+\usepackage{amsmath} % easier math formulae, align, subequations \ldots
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{1pt}
+
+% --- Encoding & Font ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% --- Page Layout ---
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+% --- Math ---
+\usepackage{amsmath, amssymb}
+\usepackage{mathtools}
+
+% --- Graphics & Figures ---
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% --- Tables ---
+\usepackage{booktabs}
+
+% --- Lists ---
+\usepackage{enumitem}
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% --- Algorithms ---
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+% --- Code Listings (critical for chapter 3) ---
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{pythonstyle}{
+    backgroundcolor=\color{gray!10},
+    commentstyle=\color{green!60!black},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{orange},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=Python
+}
+
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title page
+%-----------------------------------------------
+% Provide all the necessary information here
+%-----------------------------------------------
+\title{Multimodal Optimal Transport Self-Supervised Learning for Unified Chest X-ray Classification, Localization, and Automated Report Generation}
+\author{Aditya Pillai}
+\roll{CS22B1063}
+\monthyear{May 2026}
+\department{Computer Science and Engineering}
+\guide{Dr. Umarani Jayaraman}
+\guidedesignation{Assistant Professor}
+\guidedept{Computer Science and Engineering}
+\date{11.05.2026}
+
+\nocite{*} % include all bibliography entries even if not cited
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Declaration of originality
+\declaration
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Certificate
+\certificate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements
+\acknowledgements
+
+I would like to take this opportunity to express my gratitude to my advisor, Dr. Umarani Jayaraman , whose guidance, expertise, and support have very helpful throughout this research journey. Her insightful feedback and constructive criticism have immensely enriched the quality of this project. I would like to acknowledge the contributions of my peers who have provided insightful discussions and feedback during the course of this research project. Your input has been invaluable in shaping the direction and scope of this paper. I am grateful to all the faculty members of IIITDM Kancheepuram, who have given me the foundational knowledge in the field of computer science with their insightful lectures, mentorship, and guidance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abstract
+\abstract
+Chest X-ray interpretation is an essential diagnostic task that faces the issues of radiologist scarcity, label noise, and class imbalance in large-scale datasets. In this paper, an OPTiML-inspired self-supervised learning pipeline is proposed for multi-label thoracic disease classification on the NIH ChestX-ray14 dataset. In the proposed approach, a dense EfficientNet-B3 backbone is first pretrained without any disease labels using a composite loss that combines Sinkhorn optimal transport alignment, variance regularisation, and covariance decorrelation. Then, the pretrained EfficientNet-B3 backbone is fine-tuned in a multimodal supervised learning approach that incorporates image features with patient metadata including age, gender, and view position. The proposed approach attains a mean AUC-ROC of 0.8636 across 13 disease classes, outperforming the performance of several strong baselines including DenseNet-121 (0.77), ViT/Swin (0.80), and EfficientNet-B3 without SSL pretraining (0.85). Moreover, the proposed approach attains an improvement in Macro F1 from 0.3444 to 0.5103 using per-class threshold optimisation by calibrating the decision boundaries below 0.5, which were completely suppressed by the default threshold. Additional tasks verify the spatial quality of the learned representations, including lung segmentation with a Dice coefficient of 0.9537 and bounding box localisation with an IoU of 0.22 using weak supervision. At the end a radiology report is also created using the generated bounding boxes and the predicted labels. Overall, the results demonstrate that OPTiML-inspired self-supervised pretraining is an effective strategy for medical image analysis, particularly in scenarios with noisy or imbalanced labels, and validates the feasibility of the proposed pipeline inspired by the original OPTiML paper.
+\\
+\vspace{10pt}
+\noindent KEYWORDS: \hspace*{0.5em} \parbox[t]{4.4in}{Self-Supervised Learning; Optimal Transport; Multi-Label Classification; Chest X-Ray; EfficientNet-B3; Focal Loss.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Table of contents etc.
+
+\begin{singlespace}
+\tableofcontents
+\thispagestyle{empty}
+
+\listoftables
+\addcontentsline{toc}{chapter}{LIST OF TABLES}
+\listoffigures
+\addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\end{singlespace}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbreviations
+% \abbreviations
+
+% \noindent 
+% \begin{tabbing}
+% xxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
+% \textbf{DSP}   \> Digital Signal Processing\\
+
+% \end{tabbing}
+\abbreviations
+\noindent
+\begin{tabbing}
+xxxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
+\textbf{AP}         \> Anteroposterior\\
+\textbf{AUC}        \> Area Under the Curve\\
+\textbf{AUC-ROC}    \> Area Under the Receiver Operating Characteristic Curve\\
+\textbf{CAD}        \> Computer-Aided Diagnosis\\
+\textbf{CXR}        \> Chest X-Ray\\
+\textbf{F1}         \> F1 Score (Harmonic Mean of Precision and Recall)\\
+\textbf{Grad-CAM}   \> Gradient-weighted Class Activation Mapping\\
+\textbf{HiTL}       \> Human in the Loop\\
+\textbf{IHRAS}      \> Intelligent Humanized Radiology Analysis System\\
+\textbf{IoU}        \> Intersection over Union\\
+\textbf{KL}         \> Kullback--Leibler Divergence\\
+\textbf{MBConv}     \> Mobile Inverted Bottleneck Convolution\\
+\textbf{MIMIC-CXR}  \> Medical Information Mart for Intensive Care -- Chest X-Ray\\
+\textbf{NIH}        \> National Institutes of Health\\
+\textbf{OPTiML}     \> Optimal Transport Inspired Machine Learning\\
+\textbf{OT}         \> Optimal Transport\\
+\textbf{PA}         \> Posteroanterior\\
+\textbf{RAG}        \> Retrieval-Augmented Generation\\
+\textbf{ReLU}       \> Rectified Linear Unit\\
+\textbf{ROC}        \> Receiver Operating Characteristic\\
+\textbf{SE}         \> Squeeze-and-Excitation\\
+\textbf{SimCLR}     \> Simple Framework for Contrastive Learning of Visual Representations\\
+\textbf{SOTA}       \> State of the Art\\
+\textbf{SSL}        \> Self-Supervised Learning\\
+\textbf{t-SNE}      \> t-distributed Stochastic Neighbour Embedding\\
+\textbf{ViT}        \> Vision Transformer\\
+\end{tabbing}
+
+
+\notation
+\noindent
+\begin{tabbing}
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \kill
+
+\textbf{Symbol} \> \textbf{Description}\\[0.4em]
+
+$X \in \mathbb{R}^{H \times W \times 3}$    \> Input chest X-ray image\\
+$Y \in \{0,1\}^{C}$                         \> Ground-truth multi-hot label vector\\
+$\hat{Y} \in [0,1]^{C}$                     \> Predicted disease probability vector\\
+$C$                                          \> Number of disease classes\\
+$f(\cdot)$                                   \> Encoder backbone (EfficientNet-B3)\\
+$g(\cdot)$                                   \> Projection head (SSL stage)\\
+$\mathbf{z}_{img}$                           \> Image feature vector, $\in \mathbb{R}^{1536}$\\
+$\mathbf{z}_{meta}$                          \> Metadata feature vector, $\in \mathbb{R}^{16}$\\
+$\mathbf{z}_1,\, \mathbf{z}_2$              \> Patch-level SSL embeddings, $\in \mathbb{R}^{B \times HW \times D}$\\
+$\mathbf{C},\, \mathbf{T}$                  \> OT cost matrix and transport plan\\
+$\mathcal{L}_{\text{SSL}}$                   \> Total SSL loss\\
+$\mathcal{L}_{\text{OT}},\, \mathcal{L}_{\text{var}},\, \mathcal{L}_{\text{cov}}$ \> OT alignment, variance, covariance losses\\
+$\lambda_{\text{var}} = 0.1,\; \lambda_{\text{cov}} = 0.01$ \> SSL loss weights\\
+$\mathcal{L}_{\text{Focal}}$                 \> Multi-label Focal Loss\\
+$\alpha = 0.25,\; \gamma = 2.0$             \> Focal loss parameters\\
+$\tau_c$                                     \> Per-class decision threshold\\
+$\eta$                                       \> Learning rate\\
+$\mu,\, \sigma$                              \> ImageNet normalisation mean and std\\
+
+\end{tabbing}
+
+\pagebreak
+\clearpage
+
+% The main text will follow from this point so set the page numbering
+% to arabic from here on.
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\fancyhf{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Enter the details of roll number, department and year for Header and Footer
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancyhead[l]{\leftmark}
+\fancyfoot[r]{\thepage}
+\fancyhead[r]{CS22B1063}
+\fancyfoot[l]{Department of CSE, IIITDM Kancheepuram, May 2026}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapter1/chapter1}
+\input{Chapter2/chapter2}
+\input{Chapter3/chapter3}
+\input{Chapter4/chapter4}
+\input{Chapter5/chapter5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendices.
+% Comment out if not needed
+\appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bibliography.
+
+\begin{singlespace}
+  \bibliography{References}
+  \addcontentsline{toc}{chapter}{REFERENCES}
+\end{singlespace}
+
+
+\end{document}
