@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: elsarticle-template-harv.aux
+The style file: elsarticle-harv.bst
+Database file #1: References.bib
+Warning--to sort, need author or key in ihras
+Warning--to sort, need author or key in awesome_rrg
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty author in ihras
+Warning--empty pages in xrem
+You've used 12 entries,
+            2990 wiz_defined-function locations,
+            695 strings with 7716 characters,
+and the built_in function-call counts, 7514 in all, are:
+= -- 558
+> -- 348
+< -- 3
++ -- 137
+- -- 123
+* -- 854
+:= -- 1099
+add.period$ -- 39
+call.type$ -- 12
+change.case$ -- 106
+chr.to.int$ -- 12
+cite$ -- 20
+duplicate$ -- 560
+empty$ -- 501
+format.name$ -- 158
+if$ -- 1363
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 106
+newline$ -- 78
+num.names$ -- 40
+pop$ -- 215
+preamble$ -- 1
+purify$ -- 88
+quote$ -- 0
+skip$ -- 171
+stack$ -- 0
+substring$ -- 198
+swap$ -- 391
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 108
+warning$ -- 4
+while$ -- 33
+width$ -- 0
+write$ -- 186
+(There were 4 warnings)

@@ -1,0 +1,78 @@
+\begin{thebibliography}{12}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{ihr(2024)}]{ihras}
+, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Automated medical report generation from chest {X}-rays via classification, segmentation, and {LLMs}}.
+\newblock \bibinfo{journal}{MDPI Applied Sciences} \bibinfo{volume}{12}, \bibinfo{pages}{11750}.
+\newblock \URLprefix \url{https://www.mdpi.com/2076-3417/12/22/11750}.
+%Type = Misc
+\bibitem[{awe(2024)}]{awesome_rrg}
+, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Awesome radiology report generation}.
+\newblock \URLprefix \url{https://github.com/mk-runner/Awesome-Radiology-Report-Generation}. \bibinfo{note}{gitHub Repository}.
+%Type = Misc
+\bibitem[{Chen et~al.(2020)Chen, Kornblith, Norouzi and Hinton}]{simclr}
+\bibinfo{author}{Chen, T.}, \bibinfo{author}{Kornblith, S.}, \bibinfo{author}{Norouzi, M.}, \bibinfo{author}{Hinton, G.}, \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{A simple framework for contrastive learning of visual representations}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2002.05709}. \bibinfo{note}{arXiv preprint arXiv:2002.05709}.
+%Type = Misc
+\bibitem[{Chen and Wang(2024)}]{concept_rag}
+\bibinfo{author}{Chen, Z.}, \bibinfo{author}{Wang, Y.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Towards interpretable radiology report generation via concept bottlenecks using a multi-agentic {RAG}}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2412.16086}. \bibinfo{note}{arXiv preprint arXiv:2412.16086}.
+%Type = Inproceedings
+\bibitem[{Jeong et~al.(2024)}]{xrem}
+\bibinfo{author}{Jeong, J.}, et~al., \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Multimodal image-text matching improves retrieval-based chest {X}-ray report generation}, in: \bibinfo{booktitle}{Proceedings of Machine Learning Research}.
+\newblock \URLprefix \url{https://proceedings.mlr.press/v227/jeong24a.html}.
+%Type = Article
+\bibitem[{Kim et~al.(2024)Kim, Lee, Kim and Park}]{pmc_advancements}
+\bibinfo{author}{Kim, J.H.}, \bibinfo{author}{Lee, H.}, \bibinfo{author}{Kim, S.}, \bibinfo{author}{Park, S.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Advancements in radiology report generation: A comprehensive analysis}.
+\newblock \bibinfo{journal}{PMC Review} \URLprefix \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC12292164/}.
+%Type = Misc
+\bibitem[{Lu et~al.(2024)Lu, Ding, Wu, Zhu, Yan, Deng, Sun, Wang and Zhang}]{otcxr}
+\bibinfo{author}{Lu, S.}, \bibinfo{author}{Ding, Y.}, \bibinfo{author}{Wu, Y.}, \bibinfo{author}{Zhu, G.}, \bibinfo{author}{Yan, Y.}, \bibinfo{author}{Deng, Y.}, \bibinfo{author}{Sun, W.}, \bibinfo{author}{Wang, L.}, \bibinfo{author}{Zhang, L.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{{OTCXR}: Rethinking self-supervised alignment using optimal transport for chest {X}-ray analysis}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2404.11868}. \bibinfo{note}{arXiv preprint arXiv:2404.11868}.
+%Type = Article
+\bibitem[{Rahman and Chowdhury(2022)}]{xai_survey}
+\bibinfo{author}{Rahman, T.}, \bibinfo{author}{Chowdhury, M.E.H.}, \bibinfo{year}{2022}.
+\newblock \bibinfo{title}{Explainable-{AI} in automated medical report generation using chest {X}-ray images}.
+\newblock \bibinfo{journal}{MDPI Applied Sciences} \bibinfo{volume}{12}, \bibinfo{pages}{11750}.
+\newblock \URLprefix \url{https://www.mdpi.com/2306-5354/12/8/795}.
+%Type = Misc
+\bibitem[{Wang et~al.(2024)Wang, Liu, Wang and Zhou}]{integrative_multimodal}
+\bibinfo{author}{Wang, Z.}, \bibinfo{author}{Liu, L.}, \bibinfo{author}{Wang, L.}, \bibinfo{author}{Zhou, L.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Beyond images: An integrative multi-modal approach to chest {X}-ray report generation}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2311.11090}. \bibinfo{note}{arXiv preprint arXiv:2311.11090}.
+%Type = Article
+\bibitem[{Yang et~al.(2023)Yang, Wu, Ge, Zheng, Zhou and Xie}]{yang_knowledge}
+\bibinfo{author}{Yang, S.}, \bibinfo{author}{Wu, X.}, \bibinfo{author}{Ge, S.}, \bibinfo{author}{Zheng, S.K.}, \bibinfo{author}{Zhou, Z.}, \bibinfo{author}{Xie, X.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Radiology report generation with a learned knowledge base and multi-modal alignment}.
+\newblock \bibinfo{journal}{Medical Image Analysis} \bibinfo{volume}{86}, \bibinfo{pages}{102798}.
+\newblock \URLprefix \url{https://www.sciencedirect.com/science/article/pii/S1361841523000592}.
+%Type = Misc
+\bibitem[{Zbontar et~al.(2021)Zbontar, Jing, Misra, LeCun and Deny}]{barlow_twins}
+\bibinfo{author}{Zbontar, J.}, \bibinfo{author}{Jing, L.}, \bibinfo{author}{Misra, I.}, \bibinfo{author}{LeCun, Y.}, \bibinfo{author}{Deny, S.}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Barlow {Twins}: Self-supervised learning via redundancy reduction}.
+\newblock \URLprefix \url{https://arxiv.org/abs/2103.03230}. \bibinfo{note}{arXiv preprint arXiv:2103.03230}.
+%Type = Article
+\bibitem[{Zhang et~al.(2025)Zhang, Wang and Chen}]{mmg_fusion}
+\bibinfo{author}{Zhang, Y.}, \bibinfo{author}{Wang, X.}, \bibinfo{author}{Chen, L.}, \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Automated generation of chest {X}-ray imaging diagnostic reports by multimodal and multi-granularity features fusion}.
+\newblock \bibinfo{journal}{Scientific Reports} \URLprefix \url{https://www.sciencedirect.com/science/article/abs/pii/S1746809425000734}.
+
+\end{thebibliography}

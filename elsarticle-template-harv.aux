@@ -1,0 +1,153 @@
+\relax 
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{}\protected@file@percent }
+\newlabel{sec:intro}{{1}{2}{}{section.1}{}}
+\citation{yang_knowledge}
+\citation{mmg_fusion}
+\citation{ihras}
+\citation{xrem}
+\citation{concept_rag}
+\citation{integrative_multimodal}
+\citation{xai_survey}
+\citation{pmc_advancements,awesome_rrg}
+\citation{yang_knowledge}
+\citation{integrative_multimodal}
+\citation{mmg_fusion}
+\citation{ihras}
+\citation{xrem}
+\citation{concept_rag}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Existing Approaches}{3}{}\protected@file@percent }
+\newlabel{sec:existing}{{1.1}{3}{}{subsection.1.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Gaps in Existing Approaches}{4}{}\protected@file@percent }
+\newlabel{sec:gaps}{{1.2}{4}{}{subsection.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Contributions of this Work}{4}{}\protected@file@percent }
+\newlabel{sec:contributions}{{1.3}{4}{}{subsection.1.3}{}}
+\citation{yang_knowledge}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Organisation of the Paper}{5}{}\protected@file@percent }
+\newlabel{sec:organisation}{{1.4}{5}{}{subsection.1.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Literature Review}{5}{}\protected@file@percent }
+\newlabel{sec:litreview}{{2}{5}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Knowledge- and Multimodal-Alignment Approaches}{5}{}\protected@file@percent }
+\citation{mmg_fusion}
+\citation{integrative_multimodal}
+\citation{ihras}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Structured Clinical Context}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Modular, Component-Based Pipelines}{6}{}\protected@file@percent }
+\citation{xrem}
+\citation{concept_rag}
+\citation{xai_survey}
+\citation{pmc_advancements}
+\citation{awesome_rrg}
+\citation{integrative_multimodal}
+\citation{ihras}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Retrieval-Augmented and Concept-Based Approaches}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Explainability and Survey Perspectives}{7}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6}Positioning of this Work}{8}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{8}{}\protected@file@percent }
+\newlabel{sec:methodology}{{3}{8}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Overview}{8}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:architecture}{{\caption@xref {fig:architecture}{ on input line 131}}{9}{}{subsection.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Dataset}{10}{}\protected@file@percent }
+\newlabel{sec:dataset}{{3.2}{10}{}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.1}NIH ChestX-ray14}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.2.2}Shenzhen Chest X-ray Dataset}{10}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Preprocessing and Augmentation}{10}{}\protected@file@percent }
+\newlabel{sec:preprocessing}{{3.3}{10}{}{subsection.3.3}{}}
+\citation{otcxr}
+\citation{simclr}
+\citation{barlow_twins}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Multimodal Classification Architecture}{11}{}\protected@file@percent }
+\newlabel{sec:classifier-arch}{{3.4}{11}{}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Optional Self-Supervised Pre-Training (Exploratory)}{11}{}\protected@file@percent }
+\newlabel{sec:ssl}{{3.5}{11}{}{subsection.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6}Disease Localisation: Multimodal Bounding-Box Regressor}{12}{}\protected@file@percent }
+\newlabel{sec:bbox-arch}{{3.6}{12}{}{subsection.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7}Lung Segmentation: Edge-Aware U-Net}{12}{}\protected@file@percent }
+\newlabel{sec:unet-arch}{{3.7}{12}{}{subsection.3.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Edge-Aware U-Net for lung segmentation with dual mask and edge output heads.}}{13}{}\protected@file@percent }
+\newlabel{fig:unet_arch}{{1}{13}{}{figure.1}{}}
+\citation{barlow_twins}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8}Loss Functions}{14}{}\protected@file@percent }
+\newlabel{sec:losses}{{3.8}{14}{}{subsection.3.8}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.8.1}Multi-Label Focal Loss}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.8.2}Self-Supervised Pre-Training Loss (Exploratory)}{14}{}\protected@file@percent }
+\newlabel{sec:loss-ssl}{{3.8.2}{14}{}{subsubsection.3.8.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.8.3}CIoU and Smooth-L1 Loss for Localisation}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.8.4}Segmentation Loss}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9}Post-Processing and Zone-Based Report Generation}{15}{}\protected@file@percent }
+\newlabel{sec:report-gen}{{3.9}{15}{}{subsection.3.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces End-to-end inference on a sample NIH chest radiograph: classification confidences, predicted bounding boxes, segmented lung fields, and the resulting zone-attributed structured report.}}{16}{}\protected@file@percent }
+\newlabel{fig:pipeline_viz}{{2}{16}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experimental Results}{16}{}\protected@file@percent }
+\newlabel{sec:results}{{4}{16}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Performance Metrics}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Multi-Label Classification Results}{16}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Learning curves for the supervised multimodal classifier.}}{17}{}\protected@file@percent }
+\newlabel{fig:learning_curves}{{3}{17}{}{figure.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Per-Class Threshold Optimisation}{17}{}\protected@file@percent }
+\newlabel{sec:threshold}{{4.3}{17}{}{subsection.4.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Per-class AUC-ROC on the validation set.}}{18}{}\protected@file@percent }
+\newlabel{tab:per_class_auc}{{1}{18}{}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Overall F1 improvement from per-class threshold optimisation.}}{19}{}\protected@file@percent }
+\newlabel{tab:threshold_overall}{{2}{19}{}{table.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Per-class threshold optimisation results.}}{19}{}\protected@file@percent }
+\newlabel{tab:threshold_perclass}{{3}{19}{}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Threshold optimisation results: (top-left) optimal thresholds per class, (top-right) F1 at optimised thresholds, (bottom-left) threshold vs.\ F1, (bottom-right) distribution of optimal thresholds.}}{20}{}\protected@file@percent }
+\newlabel{fig:threshold_opt}{{4}{20}{}{figure.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Representation Quality}{20}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces t-SNE projection of validation embeddings coloured by individual disease label versus Normal.}}{21}{}\protected@file@percent }
+\newlabel{fig:tsne_per_disease}{{5}{21}{}{figure.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces t-SNE projection coloured by any-disease-present versus Normal.}}{21}{}\protected@file@percent }
+\newlabel{fig:tsne_any_vs_normal}{{6}{21}{}{figure.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Disease Localisation Results}{22}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Bounding-box regression summary at early stopping (epoch 34).}}{22}{}\protected@file@percent }
+\newlabel{tab:bbox_training}{{4}{22}{}{table.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Bounding-box regression training curves: (left) CIoU + Smooth-L1 loss, (centre) mean IoU, (right) validation IoU hit-rate at 0.25 and 0.50.}}{22}{}\protected@file@percent }
+\newlabel{fig:bbox_curves}{{7}{22}{}{figure.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Per-class IoU on the bounding-box validation set.}}{23}{}\protected@file@percent }
+\newlabel{tab:bbox_perclass}{{5}{23}{}{table.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Qualitative bounding-box predictions on the validation set (green: ground truth, red: prediction); per-sample IoU is shown in each subplot title.}}{23}{}\protected@file@percent }
+\newlabel{fig:bbox_viz}{{8}{23}{}{figure.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Lung Segmentation Results}{24}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Lung segmentation performance at epoch 60 on the validation set.}}{24}{}\protected@file@percent }
+\newlabel{tab:segmentation}{{6}{24}{}{table.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Segmentation training curves: combined loss (train/validation) and validation Dice, IoU, and Boundary F1 over 60 epochs.}}{24}{}\protected@file@percent }
+\newlabel{fig:seg_curves}{{9}{24}{}{figure.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Qualitative segmentation output: predicted binary lung mask overlaid on the input radiograph, with the left/right lung bounding boxes used for zone division.}}{25}{}\protected@file@percent }
+\newlabel{fig:seg_viz}{{10}{25}{}{figure.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.7}Note on Self-Supervised Pre-Training}{25}{}\protected@file@percent }
+\newlabel{sec:ssl-results}{{4.7}{25}{}{subsection.4.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Comparison with State of the Art}{25}{}\protected@file@percent }
+\newlabel{sec:comparison}{{5}{25}{}{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Comparison with Supervised Baselines on NIH ChestX-ray14}{25}{}\protected@file@percent }
+\citation{yang_knowledge,mmg_fusion}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Mean AUC-ROC at varying labelled-data fractions, supervised-only (SL) vs.\ SSL-pretrained (SL+SSL).}}{26}{}\protected@file@percent }
+\newlabel{tab:label_efficiency}{{7}{26}{}{table.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Comparison of mean AUC-ROC across baseline architectures and the proposed model on NIH ChestX-ray14.}}{26}{}\protected@file@percent }
+\newlabel{tab:baselines}{{8}{26}{}{table.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Qualitative Comparison with the Report-Generation Literature}{26}{}\protected@file@percent }
+\citation{yang_knowledge}
+\citation{mmg_fusion}
+\citation{ihras}
+\citation{xrem}
+\citation{concept_rag}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Qualitative comparison with representative literature approaches.}}{27}{}\protected@file@percent }
+\newlabel{tab:qualitative_comparison}{{9}{27}{}{table.9}{}}
+\citation{xrem,concept_rag}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion and Future Work}{28}{}\protected@file@percent }
+\newlabel{sec:conclusion}{{6}{28}{}{section.6}{}}
+\bibstyle{elsarticle-harv}
+\bibdata{References}
+\bibcite{ihras}{{1}{2024}{{ihr}}{{}}}
+\bibcite{awesome_rrg}{{2}{2024}{{awe}}{{}}}
+\bibcite{simclr}{{3}{2020}{{Chen et~al.}}{{Chen, Kornblith, Norouzi and Hinton}}}
+\bibcite{concept_rag}{{4}{2024}{{Chen and Wang}}{{}}}
+\bibcite{xrem}{{5}{2024}{{Jeong et~al.}}{{}}}
+\bibcite{pmc_advancements}{{6}{2024}{{Kim et~al.}}{{Kim, Lee, Kim and Park}}}
+\bibcite{otcxr}{{7}{2024}{{Lu et~al.}}{{Lu, Ding, Wu, Zhu, Yan, Deng, Sun, Wang and Zhang}}}
+\bibcite{xai_survey}{{8}{2022}{{Rahman and Chowdhury}}{{}}}
+\bibcite{integrative_multimodal}{{9}{2024}{{Wang et~al.}}{{Wang, Liu, Wang and Zhou}}}
+\bibcite{yang_knowledge}{{10}{2023}{{Yang et~al.}}{{Yang, Wu, Ge, Zheng, Zhou and Xie}}}
+\bibcite{barlow_twins}{{11}{2021}{{Zbontar et~al.}}{{Zbontar, Jing, Misra, LeCun and Deny}}}
+\bibcite{mmg_fusion}{{12}{2025}{{Zhang et~al.}}{{Zhang, Wang and Chen}}}
+\gdef \@abspage@last{30}

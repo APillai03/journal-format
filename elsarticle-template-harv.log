@@ -1,0 +1,723 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.2.28)  19 JUN 2026 18:03
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/aditya/Elsevier_Article__elsarticle__Template__1_/elsarticle-template-harv.tex
+(/home/aditya/Elsevier_Article__elsarticle__Template__1_/elsarticle-template-harv.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+(./elsarticle.cls
+Document Class: elsarticle 2025/01/11, 3.4c: Elsevier Ltd
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2025-01-18 L3 programming layer (loader) 
+ (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count196
+\l__pdf_internal_box=\box52
+)) (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2024-08-16 L3 Experimental document command parser
+) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/02/11 v2.5l e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count197
+)
+\@bls=\dimen141
+ (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2024/06/29 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count198
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@subparagraph=\count269
+\c@figure=\count270
+\c@table=\count271
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen142
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
+\c@tnote=\count272
+\c@fnote=\count273
+\c@cnote=\count274
+\c@ead=\count275
+\c@elsarticle@author=\count276
+\@eadauthor=\toks18
+\c@affn=\count277
+\absbox=\box53
+\elsarticlehighlightsbox=\box54
+\elsarticlegrabsbox=\box55
+\keybox=\box56
+\Columnwidth=\dimen145
+\space@left=\dimen146
+\els@boxa=\box57
+\els@boxb=\box58
+\leftMargin=\dimen147
+\@enLab=\toks19
+\@sep=\skip51
+\@@sep=\skip52
+ (./elsarticle-template-harv.spl) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count278
+)
+\splwrite=\write3
+\openout3 = `elsarticle-template-harv.spl'.
+
+\appnamewidth=\dimen148
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2024/11/05 v2.17t AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen149
+)) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen150
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count279
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count280
+\leftroot@=\count281
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count282
+\DOTSCASE@=\count283
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen151
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count284
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count285
+\dotsspace@=\muskip17
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
+\tag@help=\toks22
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
+\andhelp@=\toks23
+\eqnshift@=\dimen152
+\alignsep@=\dimen153
+\tagshift@=\dimen154
+\tagwidth@=\dimen155
+\totwidth@=\dimen156
+\lineht@=\dimen157
+\@envbody=\toks24
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen158
+\lightrulewidth=\dimen159
+\cmidrulewidth=\dimen160
+\belowrulesep=\dimen161
+\belowbottomsep=\dimen162
+\aboverulesep=\dimen163
+\abovetopsep=\dimen164
+\cmidrulesep=\dimen165
+\cmidrulekern=\dimen166
+\defaultaddspace=\dimen167
+\@cmidla=\count291
+\@cmidlb=\count292
+\@aboverulesep=\dimen168
+\@belowrulesep=\dimen169
+\@thisruleclass=\count293
+\@lastruleclass=\count294
+\@thisrulewidth=\dimen170
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip58
+\multirow@cntb=\count295
+\multirow@dima=\skip59
+\bigstrutjot=\dimen171
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box61
+\extrarowheight=\dimen173
+\NC@list=\toks26
+\extratabsurround=\skip60
+\backup@length=\skip61
+\ar@cellbox=\box62
+) (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen174
+\captionmargin=\dimen175
+\caption@leftmargin=\dimen176
+\caption@rightmargin=\dimen177
+\caption@width=\dimen178
+\caption@indent=\dimen179
+\caption@parindent=\dimen180
+\caption@hangindent=\dimen181
+Package caption Info: elsarticle document class detected.
+ (/usr/share/texlive/texmf-dist/tex/latex/caption/caption-elsarticle.sto
+File: caption-elsarticle.sto 2020/08/22 v2.0 Adaption of the caption package to the elsarticle document class (AR)
+))
+\c@caption@flags=\count296
+\c@continuedfloat=\count297
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count298
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count299
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks27
+\minrowclearance=\skip62
+\rownum=\count300
+) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+) (./elsarticle-template-harv.aux)
+\openout1 = `elsarticle-template-harv.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+ (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count301
+\scratchdimen=\dimen182
+\scratchbox=\box63
+\nofMPsegments=\count302
+\nofMParguments=\count303
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen183
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
+\everyMPtoPDFconversion=\toks29
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 43.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 43.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+
+[2]
+
+[3]
+Overfull \hbox (0.22688pt too wide) in paragraph at lines 73--74
+\T1/cmr/m/n/12 Shen-zhen Chest X-ray dataset, com-bin-ing Dice loss, boundary-weighted
+ []
+
+
+
+[4]
+Overfull \hbox (15.54942pt too wide) in paragraph at lines 75--76
+[]\T1/cmr/m/n/12 An \T1/cmr/bx/n/12 ex-ploratory eval-u-a-tion \T1/cmr/m/n/12 of optimal-transport-inspired self-supervised
+ []
+
+
+Overfull \hbox (1.57109pt too wide) in paragraph at lines 88--89
+[]\T1/cmr/m/n/12 This sec-tion re-views re-cent (2021--2026) work on deep-learning-based chest
+ []
+
+
+
+[5]
+
+[6]
+
+[7]
+
+Package caption Warning: \label without proper reference on input line 131.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:architecture' on page 8 undefined on input line 125.
+
+<architecture_flow.png, id=30, 5890.005pt x 8222.72pt>
+File: architecture_flow.png Graphic file (type png)
+<use architecture_flow.png>
+Package pdftex.def Info: architecture_flow.png  used on input line 129.
+(pdftex.def)             Requested size: 390.0pt x 544.40758pt.
+
+
+[8]
+
+[9 <./architecture_flow.png>]
+Overfull \hbox (5.68118pt too wide) in paragraph at lines 141--142
+[]\T1/cmr/m/n/12 For dis-ease lo-cal-i-sa-tion, the NIH \T1/cmtt/m/n/12 BBox_List_2017.csv \T1/cmr/m/n/12 file pro-vides expert-
+ []
+
+
+Overfull \hbox (2.37584pt too wide) in paragraph at lines 145--146
+\T1/cmr/m/n/12 pro-vides frontal ra-dio-graphs with expert-delineated bi-nary lung masks. Train-
+ []
+
+
+Overfull \hbox (22.25888pt too wide) in paragraph at lines 145--146
+\T1/cmr/m/n/12 qual-ity with pathology-related struc-tural changes, us-ing an 85/15 train/validation
+ []
+
+
+
+[10
+
+]
+
+[11]
+<unetarchitecture.png, id=54, 3275.23625pt x 8205.65625pt>
+File: unetarchitecture.png Graphic file (type png)
+<use unetarchitecture.png>
+Package pdftex.def Info: unetarchitecture.png  used on input line 190.
+(pdftex.def)             Requested size: 201.40335pt x 504.58853pt.
+
+
+[12]
+
+[13 <./unetarchitecture.png>]
+Overfull \hbox (2.18887pt too wide) in paragraph at lines 216--218
+\T1/cmr/m/n/12 and a Barlow-Twins-style co-vari-ance decor-re-la-tion term (Zbon-tar et al., 2021), 
+ []
+
+
+Overfull \hbox (39.20749pt too wide) in paragraph at lines 229--231
+\T1/cmr/m/n/12 is the squared di-ag-o-nal of the small-est en-clos-ing box, $\OML/cmm/m/it/12 v \OT1/cmr/m/n/12 = [] [][]$
+ []
+
+
+
+[14]
+Overfull \hbox (12.11676pt too wide) in paragraph at lines 237--239
+\T1/cmr/m/n/12 where the Dice term $\OMS/cmsy/m/n/12 L[] \OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12 ^^@ []$ \T1/cmr/m/n/12 ad-dresses foreground--background
+ []
+
+
+Overfull \hbox (48.73819pt too wide) in paragraph at lines 237--239
+\T1/cmr/m/n/12 im-bal-ance, the boundary-weighted BCE term $\OMS/cmsy/m/n/12 L[] \OT1/cmr/m/n/12 = [] [][](1 + \OML/cmm/m/it/12 E[]\OT1/cmr/m/n/12 ) []([]\OML/cmm/m/it/12 ; M[]\OT1/cmr/m/n/12 )$
+ []
+
+<pipeline_result.png, id=71, 1863.1206pt x 479.8728pt>
+File: pipeline_result.png Graphic file (type png)
+<use pipeline_result.png>
+Package pdftex.def Info: pipeline_result.png  used on input line 249.
+(pdftex.def)             Requested size: 390.0pt x 100.44675pt.
+
+
+[15]
+<loss_auc_evolution.png, id=76, 441.14813pt x 359.84438pt>
+File: loss_auc_evolution.png Graphic file (type png)
+<use loss_auc_evolution.png>
+Package pdftex.def Info: loss_auc_evolution.png  used on input line 271.
+(pdftex.def)             Requested size: 187.19833pt x 152.69847pt.
+<auc_with_control_line.png, id=77, 438.13687pt x 359.84438pt>
+File: auc_with_control_line.png Graphic file (type png)
+<use auc_with_control_line.png>
+Package pdftex.def Info: auc_with_control_line.png  used on input line 277.
+(pdftex.def)             Requested size: 187.19833pt x 153.74721pt.
+
+
+[16 <./pipeline_result.png>]
+
+[17 <./loss_auc_evolution.png> <./auc_with_control_line.png>]
+Overfull \hbox (23.62196pt too wide) in paragraph at lines 341--362
+ [][] 
+ []
+
+
+
+[18]
+
+[19]
+<threshold_optimization_results.png, id=94, 1148.3703pt x 715.473pt>
+File: threshold_optimization_results.png Graphic file (type png)
+<use threshold_optimization_results.png>
+Package pdftex.def Info: threshold_optimization_results.png  used on input line 366.
+(pdftex.def)             Requested size: 370.49881pt x 230.8338pt.
+
+Overfull \hbox (13.80534pt too wide) in paragraph at lines 373--374
+\T1/cmr/m/n/12 show that ra-di-o-log-i-cally dis-tinct patholo-gies such as Em-phy-sema, Car-diomegaly,
+ []
+
+<tsne_disease_vs_normal.png, id=95, 1726.5303pt x 1463.4675pt>
+File: tsne_disease_vs_normal.png Graphic file (type png)
+<use tsne_disease_vs_normal.png>
+Package pdftex.def Info: tsne_disease_vs_normal.png  used on input line 377.
+(pdftex.def)             Requested size: 331.50238pt x 280.98703pt.
+<tsne_anydisease_vs_normal.png, id=96, 714.7503pt x 570.933pt>
+File: tsne_anydisease_vs_normal.png Graphic file (type png)
+<use tsne_anydisease_vs_normal.png>
+Package pdftex.def Info: tsne_anydisease_vs_normal.png  used on input line 384.
+(pdftex.def)             Requested size: 214.50119pt x 171.3422pt.
+
+
+[20
+
+ <./threshold_optimization_results.png>]
+
+[21 <./tsne_disease_vs_normal.png> <./tsne_anydisease_vs_normal.png>]
+<bbox_training_curves.png, id=106, 1292.1876pt x 352.1958pt>
+File: bbox_training_curves.png Graphic file (type png)
+<use bbox_training_curves.png>
+Package pdftex.def Info: bbox_training_curves.png  used on input line 410.
+(pdftex.def)             Requested size: 390.0pt x 106.29907pt.
+
+
+[22
+
+ <./bbox_training_curves.png>]
+<bbox_predictions_viz.png, id=111, 545.78906pt x 550.30594pt>
+File: bbox_predictions_viz.png Graphic file (type png)
+<use bbox_predictions_viz.png>
+Package pdftex.def Info: bbox_predictions_viz.png  used on input line 438.
+(pdftex.def)             Requested size: 292.5pt x 294.9188pt.
+
+
+[23 <./bbox_predictions_viz.png>]
+<training_curves.png, id=116, 1004.0712pt x 279.9258pt>
+File: training_curves.png Graphic file (type png)
+<use training_curves.png>
+Package pdftex.def Info: training_curves.png  used on input line 467.
+(pdftex.def)             Requested size: 390.0pt x 108.7264pt.
+<sample_prediction.png, id=117, 1097.0586pt x 357.4956pt>
+File: sample_prediction.png Graphic file (type png)
+<use sample_prediction.png>
+Package pdftex.def Info: sample_prediction.png  used on input line 473.
+(pdftex.def)             Requested size: 272.99881pt x 88.95909pt.
+
+
+[24
+
+ <./training_curves.png>]
+
+[25 <./sample_prediction.png>]
+Overfull \hbox (82.80283pt too wide) in paragraph at lines 514--526
+ [][] 
+ []
+
+
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]|\T1/cmr/bx/n/12 Spatial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+\T1/cmr/bx/n/12 Ground-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--539
+[]|\T1/cmr/bx/n/12 Metadata
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+[]|\T1/cmr/bx/n/12 Structured /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+[]|\T1/cmr/m/n/12 Yang et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 541--541
+[]|\T1/cmr/m/n/12 No (end-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\T1/cmr/m/n/12 Zhang et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\T1/cmr/m/n/12 Partial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+\T1/cmr/m/n/12 (multi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+\T1/cmr/m/n/12 scale
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\T1/cmr/m/n/12 Patient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+\T1/cmr/m/n/12 his-tory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+\T1/cmr/m/n/12 CAM +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 543--543
+\T1/cmr/m/n/12 seg-men-ta-
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 543--543
+[]|\T1/cmr/m/n/12 Not spec-i-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+[]|\T1/cmr/m/n/12 Jeong et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+[]|\T1/cmr/m/n/12 Yes (re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--545
+[]|\T1/cmr/m/n/12 Concept-
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 545--546
+[]|\T1/cmr/m/n/12 Concept bot-tle-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+[]|\T1/cmr/bx/n/12 Yes
+ []
+
+
+Underfull \hbox (badness 4144) in paragraph at lines 546--546
+\T1/cmr/bx/n/12 (bbox +
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\T1/cmr/bx/n/12 seg-men-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--546
+\T1/cmr/bx/n/12 sex,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+[]|\T1/cmr/bx/n/12 Yes (6-zone
+ []
+
+
+Overfull \hbox (11.43303pt too wide) in paragraph at lines 537--549
+ [][] 
+ []
+
+
+
+[27]
+Overfull \hbox (13.55743pt too wide) in paragraph at lines 560--561
+\T1/cmr/m/n/12 bounding-box an-no-ta-tion set (880 im-ages); fine-tuning on the larger, radiologist-
+ []
+
+
+
+[28] (./elsarticle-template-harv.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 22--26
+[]\T1/cmr/m/n/12 , 2024.  Awe-some ra-di-ol-ogy re-port gen-er-a-tion.  URL:
+ []
+
+
+Overfull \hbox (20.11372pt too wide) in paragraph at lines 22--26
+\T1/cmtt/m/n/12 https://github.com/mk-runner/Awesome-Radiology-Report-Generation\T1/cmr/m/n/12 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+[]\T1/cmr/m/n/12 Jeong, J., et al., 2024.  Mul-ti-modal image-text match-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+\T1/cmr/m/n/12 ing im-proves retrieval-based chest X-ray re-port gen-er-a-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
+\T1/cmr/m/n/12 in: Pro-ceed-ings of Ma-chine Learn-ing Re-search.  URL:
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 47--51
+\T1/cmr/m/n/12 Wang, L., Zhang, L., 2024.  OTCXR: Re-think-ing self-supervised
+ []
+
+
+
+[29]
+Underfull \hbox (badness 1231) in paragraph at lines 63--68
+[]\T1/cmr/m/n/12 Yang, S., Wu, X., Ge, S., Zheng, S.K., Zhou, Z., Xie, X., 2023.
+ []
+
+
+Underfull \hbox (badness 3323) in paragraph at lines 63--68
+\T1/cmr/m/n/12 Ra-di-ol-ogy re-port gen-er-a-tion with a learned knowl-edge base and
+ []
+
+
+Overfull \hbox (38.6342pt too wide) in paragraph at lines 63--68
+\T1/cmtt/m/n/12 https://www.sciencedirect.com/science/article/pii/S1361841523000592\T1/cmr/m/n/12 . 
+ []
+
+
+Underfull \hbox (badness 7133) in paragraph at lines 74--77
+[]\T1/cmr/m/n/12 Zhang, Y., Wang, X., Chen, L., 2025.  Au-to-mated gen-er-a-
+ []
+
+
+Underfull \hbox (badness 6445) in paragraph at lines 74--77
+\T1/cmr/m/n/12 tion of chest X-ray imag-ing di-ag-nos-tic re-ports by mul-ti-modal
+ []
+
+
+Underfull \hbox (badness 5316) in paragraph at lines 74--77
+\T1/cmr/m/n/12 and multi-granularity fea-tures fu-sion.  Sci-en-tific Re-ports URL:
+ []
+
+
+Overfull \hbox (63.32817pt too wide) in paragraph at lines 74--77
+\T1/cmtt/m/n/12 https://www.sciencedirect.com/science/article/abs/pii/S1746809425000734\T1/cmr/m/n/12 . 
+ []
+
+)
+
+[30] (./elsarticle-template-harv.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6401 strings out of 473197
+ 99900 string characters out of 5718605
+ 501156 words of memory out of 5000000
+ 29576 multiletter control sequences out of 15000+600000
+ 570694 words of font info for 66 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 72i,11n,79p,2602b,489s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on elsarticle-template-harv.pdf (30 pages, 5940565 bytes).
+PDF statistics:
+ 227 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+
